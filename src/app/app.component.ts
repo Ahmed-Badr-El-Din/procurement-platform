@@ -28,6 +28,7 @@ export class AppComponent {
 
 	switchUser(key: string): void {
 		this.session.user = users[key];
+		this.selectedId = null;
 		this.reload();
 	}
 
